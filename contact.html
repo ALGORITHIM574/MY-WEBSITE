@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBPAGE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <div class="header">
+        <ul>
+            <li id="homeBTN">HOME</li >
+            <li id="aboutBTN">ABOUT</li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="contactSection" class="section">
+    <h1>Contact</h1>
+    <p> Contact me directly on Email: algorithim574@gmail.com</p>
+    <div class="form">
+        <form action="https://formsubmit.co/algorithim574@gmail.com" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="text" name="address" placeholder="Your Address" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="description" placeholder="Describe your website needs" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <!-- Hidden settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_subject" value="New Website Request">
+    </form>
+    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>
