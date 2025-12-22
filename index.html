@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBPAGE </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li id="homeBTN">HOME</li >
+            <li id="aboutBTN">ABOUT</li>
+            <li id="ContactBTN">CONTACT</li>
+        </ul>
+    </div>
+    <div id="homeSection" class="main">
+        <h1>HI!<span> I AM ALEX RAIMA GITHINJI</span></h1>
+        <h2>FRONTEND DEVELOPER . REACT . JAVASCRIPT <br/> GIT/GITHUB . GSAP</h2>
+       <P> I build fast, mordern,clean and websites<br/>
+    using HTML,CSS,REACT,JAVASCRIPT and also in  GREENSOCK ANIMATION(GSAP) </p>
+    <div class="images">
+        <img style="width: 200px;height: 200px;" src="html.png" alt="image1">
+        <img style="width: 200px;height: 200px;" src="css.png" alt="image2">
+        <img style="width: 200px;height: 200px;" src="react.png" alt="image3">
+        <img style="width: 200px;height: 200px;" src="js.png" alt="image3">
+        <img style="width: 200px;height: 200px;"src="git.png" alt="image3">
+        <img style="width: 200px;height: 200px;"src="github.png" alt="image3">
+    </div>
+    </div>
+     <!-- ABOUT SECTION (hidden initially) -->
+  <div id="aboutSection" class="section" style="display:none;">
+    <h1>About Me</h1>
+    <p>I am a FreeLance with back ground in frontend developer skilled in HTML, CSS, JavaScript, React and GSAP.
+      </p>
+      <div class="content">
+        <div class="background">
+            <h2>My Background</h2>
+            <p>  Iam a self-taught developer with a passion for creating beautiful and functional websites. I have a strong foundation in web development principles and best practices, and I am always eager to learn new technologies and techniques.
+    </p>
+        </div>
+        <div class="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5 and CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>GSAP (GreenSock Animation Platform)</li>
+                <li>Git & GitHub</li>
+            </ul>
+      </div>
+      <div class="myprojects">
+        <h2>My Projects</h2>
+        <ul>
+            <p> FOR MY PROJECT CHECK OUT MY GITHUB REPO</p>
+        <button onclick="window.open('https://github.com/ALGORITHIM574/', '_blank')">
+  CHECK MY REPO
+</button>
+<p>ALSO CHECK THIS MUSIC AI APP BUT STILL IN DEVELOPMENT</p>
+      </div>
+      </div>
+  </div>
+
+    <!-- CONTACT SECTION (hidden initially) -->
+  <div id="contactSection" class="section" style="display:none;">
+    
+    <h1>Contact</h1>
+    <p> Contact me directly on Email: algorithim574@gmail.com</p>
+    <div class="form">
+        <form action="https://formsubmit.co/githinjidci0437@gmail.com" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="text" name="address" placeholder="Your Address" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="description" placeholder="Describe your website needs" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <!-- Hidden settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_subject" value="New Website Request">
+    </form>
+    </div>
+        
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>
