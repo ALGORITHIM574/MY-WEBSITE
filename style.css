@@ -1,162 +1,163 @@
 
-*{
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+
+body {
     background: #0A0A0A;
+    color: white;
+    overflow-x: hidden; /* Prevents side-scrolling on mobile */
 }
-.header{
-    width: 500px;
-    height: 100px;
+
+/* --- HEADER --- */
+.header {
+    width: 90%; /* Use percentage instead of 500px */
+    max-width: 600px;
+    min-height: 80px;
     background-color: aliceblue;
-    margin-left: 500px;
-    margin-top: 20px;
-    padding-top: 15px;
+    margin: 20px auto; /* Centered automatically */
+    padding: 15px;
     border-radius: 20px;
-    color:#00A8FF ;
-    font-size: 2rem;
+    color: #00A8FF;
+    font-size: clamp(1rem, 5vw, 1.5rem); /* Scales text size */
     font-weight: bolder;
-    
 }
-.header ul{
+
+.header ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
+    flex-wrap: wrap; /* Allows links to wrap on very small phones */
+    gap: 1.5rem;
 }
-.header ul :hover{
-    color:#A855F7;
-    cursor:pointer ;
 
-} 
-    
- h1{
-    color:#38BDF8;/*#A855F7 ,electric blue#3B82F6,neon blue#00A8FF*/
+.header ul li:hover {
+    color: #A855F7;
+    cursor: pointer;
+}
+
+/* --- TYPOGRAPHY --- */
+h1 {
+    color: #38BDF8;
     text-align: center;
-    padding-top: 10px;
+    padding: 20px 10px;
+    font-size: clamp(1.8rem, 8vw, 3rem);
 }
- h1 span{
-    color: #A855F7;
 
-}
- h1:hover{
-    color: #A855F7;
-    cursor: pointer;
-}
- h1 span:hover{
-    color: #00A8FF;
-    cursor: pointer;
-}
-h2{
+h1 span { color: #A855F7; }
+
+h2 {
     color: beige;
-    font-weight: bolder;
-    font-size: 3rem;
-    padding: 20px;
-    margin-left: 200px;
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    text-align: center;
+    margin: 10px 0;
+}
 
-}
-p{
-     background: linear-gradient(90deg, #3B82F6, #A855F7); /* gradient colors */
-    -webkit-background-clip: text; /* clips background to text */
-    -webkit-text-fill-color: transparent; /* makes text show gradient */
+p {
+    background: linear-gradient(90deg, #3B82F6, #A855F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: clamp(1rem, 4vw, 1.8rem);
     padding: 20px;
-    margin-left: 200px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.images{
-    width: auto;
-    height: 100%;
+
+/* --- IMAGES GRID --- */
+.images {
     display: flex;
-}
-.images img{
-    margin: 20px;
-    margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
 }
-.images img:hover{
+
+.images img {
+    width: 150px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.images img:hover {
     transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
-.form{
-    width: 500px;
-    height: 550px;
+
+/* --- FORM --- */
+.form {
+    width: 95%;
+    max-width: 500px;
     background-color: rgb(4, 123, 228);
-    margin-left: 500px;
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 15px;
+    margin: 40px auto; /* Centered */
+    padding: 30px 20px;
     border-radius: 20px;
 }
-form input{
-    width: 400px;
-    height: 40px;
-    margin: 20px;
-    margin-left: 50px;
+
+form input, form textarea {
+    width: 100%; /* Take up full container width */
+    margin-bottom: 20px;
     border: 3px solid #6b16cc;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 1.2rem;
+    padding: 12px;
+    font-size: 1rem;
 }
-form input:hover{
-    border: 2px solid #A855F7;
-    transition: all 0.3s ease-in-out;
-}
-form textarea{
-    width: 400px;
-    height: 150px;
-    margin: 20px;
-    border: 3px solid #6b16cc;
-    border-radius: 10px;
-    margin-left: 50px;
-    padding: 10px;
-    font-size: 1.2rem;
-}
-button{
-    width: 150px;
+
+button {
+    width: 100%;
+    max-width: 200px;
     height: 50px;
-    margin: 20px;
     border: none;
     border-radius: 10px;
     background-color: #A855F7;
     color: white;
     font-size: 1.2rem;
     font-weight: bolder;
-    margin-left: 80px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
 }
-.content{
-  display: flex;
-  flex-direction: row;}
-.content p{
-    
-     background: linear-gradient(90deg, #3B82F6, #A855F7); /* gradient colors */
-    -webkit-background-clip: text; /* clips background to text */
-    -webkit-text-fill-color: transparent; /* makes text show gradient */
-    font-weight: bolder;
-    font-size: 1rem;
-    padding: 20px;
-    margin-left: 200px;
+
+/* --- ABOUT SECTION CONTENT --- */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
-.skills li{
- background: linear-gradient(90deg, #3B82F6, #A855F7); /* gradient colors */
-    -webkit-background-clip: text; /* clips background to text */
-    -webkit-text-fill-color: transparent; /* makes text show gradient */
+
+.skills h2 {
+    margin-left: 0;
+    text-align: center;
+}
+
+.skills ul {
+    text-align: center;
+}
+
+.skills li {
+    background: linear-gradient(90deg, #3B82F6, #A855F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bolder;
     font-size: 1.2rem;
-    margin-left: 200px;
+    margin-bottom: 10px;
 }
-.skills h2{
-color: beige;
-    font-weight: bolder;
-    font-size: 3rem;
-    padding: 20px;
-    margin-left: 50px;
+
+/* --- DESKTOP ADJUSTMENTS (Screens wider than 768px) --- */
+@media (min-width: 768px) {
+    .images img {
+        width: 200px; /* Larger images for desktop */
+    }
+    
+    .content {
+        flex-direction: row; /* Side-by-side on large screens */
+        justify-content: space-around;
+        padding: 40px;
+    }
 }
-.myprojects button{
-    margin-left: 250px;
-}
+
