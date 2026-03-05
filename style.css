@@ -151,7 +151,7 @@ button {
 /* --- DESKTOP ADJUSTMENTS (Screens wider than 768px) --- */
 @media (min-width: 768px) {
     .images img {
-        width: 200px; /* Larger images for desktop */
+        width: 100px; /* Larger images for desktop */
     }
     
     .content {
